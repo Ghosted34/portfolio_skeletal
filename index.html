@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -10,17 +10,28 @@
 </head>
 
 <body>
+
+    <div class="scrollTop"><i class="fas fa-angle-up"></i></div>
+
     <!-- Header -->
     <header>
             <a class="brand" href="#">Adole Jerome</a>
+            <div class="css-contain">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
             <div class="navigation">
                 <a href="#main">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#work">Work</a>
-                <a href="#people">Motivation</a>
+                <a href="#service">Services</a>
+                <a href="#photos">Photo Booth</a>
+                <a href="#contact">Contact</a>
             </div>
     </header>
+
     <!-- Landing Section -->
     <section class="main" id="main">
         <div class="content">
@@ -33,25 +44,26 @@
             <div class="media-icons">
                 <div class="media-head">
                     <a href="linkedin.com/in/adole-jerome"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto: victorjerome34@gmail.com? subject = From your resume"><i class="fa fa-envelope"></i></a>
+                    <a href="mailto:victorjerome34@gmail.com?subject = From your resume"><i class="fa fa-envelope"></i></a>
                     <a href="github.com/Ghosted34"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- About Section -->
     <section class="about" id="about">
-        <div class="title">
+        <div class="title reveal">
             <h2 class="section-title">About Me</h2>
         </div>
         <div class="content">
-            <div class="column col-left">
+            <div class="column col-left reveal">
                 <div class="img-card">
                     <img src="assets/myself.jpeg" alt="Adole Jerome">
                 </div>
             </div>
             
-            <div class="column col-right">
+            <div class="column col-right reveal">
                 <h2 class="content-title">Hi, I'm Adole Jerome</h2>
                 <p class="paragraph"> I am a University of Lagos student, majoring in Computer Science. <br><br>
                                         My strength is web design and development, though I'm just proficient<br><br>
@@ -60,17 +72,18 @@
             </div>
         </div>
    </section>
+
     <!-- Skills Sectioin -->
     <section class="skills" id="skills">
-        <div class="title">
+        <div class="title reveal">
             <h2 class="section-title">My Skills</h2>
         </div>
         <div class="content">
-            <div class="column col-left">
+            <div class="column col-left reveal">
                 <h2>My Skills and Experiences</h2>
             </div>
 
-            <div class="column col-right">
+            <div class="column col-right reveal">
                 <div class="bar">
                     <div class="info">
                         <span class="media-icons"><code class="fab fa-html5"></code></span>
@@ -109,99 +122,158 @@
             </div>
         </div>
     </section>
+
 <!-- Work section -->
-<section id="work" class="about">
-    <div class="title">
-        <h2 class="section-title">Works</h2>
-        <p>All works can be found on my  <a href="github.com/Ghosted34"><i class="fab fa-github"></i></a></code></p>
-    </div>
-    <div class="content">
-        <div class="column col-left">
-            <div class="img-card">
-                <img src="assets/tip_calc.png" alt="tip calculator">
-            </div>
-        </div>
-        
-        <div class="column col-right">
-            <h2 class="content-title">Gratuity calculator</h2>
-            <p class="paragraph">A nice calculator that utilizes some variables to determine the tip amount to be given to the waiter</p>
-        </div>
-    </div>
-    <div class="content">
-        <div class="column col-left">
-            <div class="img-card">
-                <img src="assets/blackjack_skeletal.png" alt="Blackjack">
-            </div>
-        </div>
-        
-        <div class="column col-right">
-            <h2 class="content-title">BlackJack</h2>
-            <p class="paragraph">A fun casino game, based on the real-world Blackjack</p>
-        </div>
-    </div>
-</section>
-<!-- People section -->
-    <section id="people" class="about people">
-        <div class="title">
-            <h2 class="section-title">Motivation</h2>
+    <section id="work" class="about work">
+        <div class="title reveal">
+            <h2 class="section-title">Works</h2>
         </div>
         <div class="content">
-            <div class="column col-left">
+            <div class="column col-left reveal">
                 <div class="img-card">
-                    <img src="assets/edite_d-3.jpg" alt="Olaide Oyerinde">
+                    <img src="assets/tip_calc.png" alt="tip calculator">
                 </div>
             </div>
             
-            <div class="column col-right">
-                <h2 class="content-title">Olaide Oyerinde</h2>
-                <p class="paragraph"> A big-sister figure.
-                </p>
+            <div class="column col-right reveal">
+                <h2 class="content-title"><a href="https://tipgiver.netlify.app/">Gratuity calculator</a></h2>
+                <p class="paragraph">A nice calculator that utilizes some variables to determine the tip amount to be given to the waiter</p>
             </div>
         </div>
-       
         <div class="content">
-            <div class="column col-left">
+            <div class="column col-left reveal">
                 <div class="img-card">
-                    <img src="assets/edite_d-4.jpg" alt="Erinola Jane">
+                    <img src="assets/9ija_kids.png" alt="9ija Kids Game List">
                 </div>
             </div>
             
-            <div class="column col-right">
-                <h2 class="content-title">Erinola Jane</h2>
-                <p class="paragraph"> A Business Administration student, who doubles as a content creator, Jane helps with my artitistic design
-                </p>
-            </div>
-        </div>
-       
-        <div class="content">
-            <div class="column col-left">
-                <div class="img-card">
-                    <img src="assets/sege_x.jpg" alt="Segun Wonu">
-                </div>
-            </div>
-            
-            <div class="column col-right">
-                <h2 class="content-title">Segun Wonu</h2>
-                <p class="paragraph"> A good friend and mentor. A reason why I decided to continue Web design and development.
-                </p>
-            </div>
-        </div>
-       
-        <div class="content">
-            <div class="column col-left">
-                <div class="img-card">
-                    <img src="assets/d_major.jpg" alt="Dimeji Akinyemi">
-                </div>
-            </div>
-            
-            <div class="column col-right">
-                <h2 class="content-title">Dimeji Akinyemi</h2>
-                <p class="paragraph">A sure guy in times of need(any)
-                </p>
+            <div class="column col-right reveal">
+                <h2 class="content-title"><a href="https://9ijakidsteaser.netlify.app/">9ija Kids Game List</a></h2>
+                <p class="paragraph">A Single-Page-App that allows filtering and searching of games provided by the 9ija Kids api</p>
             </div>
         </div>
     </section>
+
+<!-- Services section -->
+   <section class="services" id="service">
+    <div class="title reveal">
+        <h2 class="section-title">My Services</h2>
+        <p>Services I can render at a proficient level, with more to come</p>
+    </div>
+
+    <div class="content">
+        <div class="card reveal">
+            <div class="service-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+            <div class="info">
+                <h3>Web Designer</h3>
+                <p>Making simple info sites</p>
+            </div>
+        </div>
+        <div class="card reveal">
+            <div class="service-icon">
+                <i class="fas fa-file-code"></i>
+            </div>
+            <div class="info">
+                <h3>Web Developer</h3>
+                <p>Creating responsive web applications</p>
+            </div>
+        </div>
+    </div>
+
+   </section>
+
+   <!-- Photos Section(Just because) -->
+   <!-- not finished -->
+   <section class="photos reveal" id="photos">
+    <div class="title reveal">
+        <div class="section-title tooltip">Photo Booth
+            <span class="tooltiptext">Might be taken down in later versions<br/> For  now, enjoy</span>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/bolu_first.jpg" alt="Bolu's camera" class="myImages">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/bolu_second.jpg" alt="Bolu's camera" class="myImages">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/wonexo.jpg" alt="Wonu" class="myImages">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/pure_evil.jpg" alt="Pure Evil" class="myImages">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/pure_evil_faded.jpg" alt="Faded" class="myImages">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/camera_first.jpg" alt="Me" class="myImages">
+            </div>
+        </div>
+    </div>
+   </section>
     
+   <!-- Contact Section -->
+   <section class="contact" id="contact">
+        <div class="title reveal">
+            <h2 class="section-title">Contact Me</h2>
+        </div>
+
+        <div class="content">
+            <div class="row reveal">
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <a href="tel:+2348134573141"><i class="fas fa-phone"></i></a>
+                    </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <span>+234-81-3457-3141</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <a href="mailto:victorjerome34@gmail.com?subject = From your resume"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="info">
+                        <h3>Mail</h3>
+                        <span>victorjerome34@gmail.com</span>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+    </section>
+    <div class="modal" id="myModal">
+        <span class="close">&times;</span>
+        <div class="image-container">
+             <img class="modal-content" id="img01" src="" alt=""/>
+        </div>
+            <p id="caption"></p>
+    </div>
+    <footer class="footer">
+        <span>Adole Jerome</span>
+        <p>&copy; @2021 <a href="#">Ghosted34</a> Made with sleep deprivation</p>
+    </footer>
     <script src='script.js'></script>
 </body>
 </html>
