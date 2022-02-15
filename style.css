@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./assets/construction-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 35px;
+  color: #ddd;
+}
+
+a,
+i {
+  color: gainsboro;
+  margin: 7px;
+  font-weight: 300;
+  font-size: 1.9rem;
+  outline: none;
+}
+
+a:hover,
+i:hover {
+  color: whitesmoke;
+  outline: none;
+}
+
+a:focus,
+i:focus,
+a:active,
+i:active {
+  color: #888;
+  outline: none;
+}
+
+a:visited,
+i:visited {
+  color: gainsboro;
+}
+
+hr {
+  width: 100%;
+  color: #eee;
+  border: solid 0.5px #eee;
+  margin-bottom: 25px;
+}
+
+.soon {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.maintain {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
