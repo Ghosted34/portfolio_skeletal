@@ -161,37 +161,3 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
-
-// MAilTrap/SMTP
-
-// const submitBtn = document.querySelector("button.btn.btn-flex");
-// const inputs = document.querySelector("form");
-// const form = document.querySelector(".contact-form");
-
-// let message = "";
-
-// $(submitBtn).on("click", function () {
-//   message = $(form).serialize();
-//   $.ajax({
-//     url: "//formspree.io/f/xdobgrlb",
-//     method: "POST",
-//     data: { message: message },
-//     dataType: "json",
-//   });
-//   alert("Thanks for the email, we'll be in touch promptly.");
-//   return false;
-// });
-
-// submitBtn.addEventListener("click", () => {
-//   Email.send({
-//     Host: "smtp.gmail.com",
-//     SecureToken: " c6759e91-8e69-4b12-a447-f2f1bfbeba0c",
-//     To: "victorjerome34@gmail.com",
-//     From: inputs.elements["email"].value,
-//     Subject: inputs.elements["subject"].value,
-//     Body:
-//       inputs.elements["message"].value + "<br>" + inputs.elements["name"].value,
-//   }).then((msg) => {
-//     alert("Message Delivered. We would get back to you.");
-//   });
-// });

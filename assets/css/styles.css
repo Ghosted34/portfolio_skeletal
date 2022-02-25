@@ -184,12 +184,13 @@ section {
   color: var(--first-color);
 }
 
-a.btn.btn-flex.btn-small {
+a.btn.btn-flex {
   color: white;
 }
 
 button {
   outline: none;
+  border: none;
 }
 /*==================== LAYOUT ====================*/
 .container {
