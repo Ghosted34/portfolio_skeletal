@@ -1,4 +1,16 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+const main = document.querySelector("main"),
+  footer = document.querySelector("footer"),
+  loader = document.querySelector(".loader-container");
+document.body.style.overflow = "hidden";
+
+main.style.display = footer.style.display = "none";
+
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+  main.style.display = footer.style.display = "block";
+  document.body.style.overflow = "auto";
+});
+
 const navigation = document.querySelector("#nav-menu"),
   navToggle = document.querySelector(".toggle");
 
@@ -19,8 +31,6 @@ const remover = () => {
 };
 
 navIcons.forEach((navIcon) => navIcon.addEventListener("click", remover));
-
-/*==================== REMOVE MENU MOBILE ====================*/
 
 /*==================== ACCORDION SKILLS ====================*/
 const skills = document.querySelectorAll(".skills-content"),
@@ -127,37 +137,36 @@ const scrollTop = () => {
 };
 window.addEventListener("scroll", scrollTop);
 /*==================== DARK LIGHT THEME ====================*/
-const themeButton = document.getElementById("theme-btn");
-const darkTheme = "dark-theme";
-const iconTheme = "fa-sun";
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem("selected-theme");
-const selectedIcon = localStorage.getItem("selected-icon");
+const themeBtn = document.getElementById("theme-btn");
+const root = document.querySelector(":root");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+const currentTheme = localStorage.getItem("theme");
 
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () =>
-  document.body.classList.contains(darkTheme) ? "dark" : "light";
-const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? "fa-moon" : "fa-sun";
-
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme
-  );
-  themeButton.classList[selectedIcon === "fa-moon" ? "add" : "remove"](
-    iconTheme
-  );
+if (currentTheme === null && prefersDarkScheme.matches) {
+  themeBtn.classList.replace("fa-moon", "fa-sun");
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener("click", () => {
-  // Add or remove the dark / icon theme
-  document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
+if (currentTheme === "dark") {
+  root.classList.toggle("dark-theme");
+  themeBtn.classList.replace("fa-moon", "fa-sun");
+} else if (currentTheme === "light") {
+  root.classList.toggle("light-theme");
+  themeBtn.classList.replace("fa-sun", "fa-moon");
+}
+
+themeBtn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+    root.classList.toggle("light-theme");
+    var theme = root.classList.contains("light-theme") ? "light" : "dark";
+  } else {
+    root.classList.toggle("dark-theme");
+    var theme = root.classList.contains("dark-theme") ? "dark" : "light";
+  }
+
+  theme === "dark"
+    ? themeBtn.classList.replace("fa-moon", "fa-sun")
+    : themeBtn.classList.replace("fa-sun", "fa-moon");
+
+  localStorage.setItem("theme", theme);
 });
